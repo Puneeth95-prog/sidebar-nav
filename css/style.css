@@ -1,0 +1,56 @@
+.main-container {
+    display: flex;
+    gap: 35px;
+    position: relative;
+}
+.main-container .sidebar-nav {
+    background-color: blueviolet;
+    width: 25%;
+    height: 100vh;
+    padding: 20px;
+    color: #fff;
+    position: absolute;
+    left: -410px;
+    top:0;
+    transition: all .5s ease-in-out;
+}
+.sidebar-nav.remove-nav-section {
+    left: 0px;
+    /* transition: all 1s ease-in; */
+}
+.content-full-width {
+    width: 70%;
+}
+
+.main-container i#hamburger-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fa4616;
+    border-radius: 50%;
+    padding: 16px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all .5s ease-in-out;
+}
+i#hamburger-icon.lines {
+    left: 310px;
+}
+.main-container .sidebar-nav .nav-links .nav-links-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #fff;
+}
+.main-container .sidebar-nav .nav-links .nav-links-item a {
+    color: #fff;
+    text-decoration: none;
+}
+.main-container .body-content {
+    position: absolute;
+    top: 30px;
+    right:0px;
+    width: 95%;
+    transition: all .5s ease-in-out;
+}
+.body-content.body-content-width {
+    width: 70%;
+}
